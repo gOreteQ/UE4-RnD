@@ -28,5 +28,5 @@ public:
     virtual void Interact_Implementation(AActor* Caller);
 	
 private:
-	USkeletalMeshComponent* SkeletalMesh;
+
 };

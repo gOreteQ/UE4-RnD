@@ -5,9 +5,9 @@ cmake_minimum_required (VERSION 2.6)
 project (UE4)
 
 set(UE4_ROOT_PATH /media/data/UnrealEngine)
-set(GAME_PROJECT_FILE "/home/captncaps/Documents/Unreal Projects/RnD/RnD.uproject")
+set(GAME_PROJECT_FILE "/media/data/Projects/Unreal Projects/RnD/RnD.uproject")
 set(BUILD mono ${UE4_ROOT_PATH}/Engine/Binaries/DotNET/UnrealBuildTool.exe )
-set(GAME_ROOT_PATH "/home/captncaps/Documents/Unreal Projects/RnD")
+set(GAME_ROOT_PATH "/media/data/Projects/Unreal Projects/RnD")
 
 set(SOURCE_FILES 
 	"${UE4_ROOT_PATH}/Engine/Source/Developer/AITestSuite/Private/AITestSuite.cpp"

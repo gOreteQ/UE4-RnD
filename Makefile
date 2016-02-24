@@ -2,7 +2,7 @@
 # *DO NOT EDIT*
 
 UNREALROOTPATH = "/media/data/UnrealEngine"
-GAMEPROJECTFILE =/home/captncaps/Documents/Unreal Projects/RnD/RnD.uproject
+GAMEPROJECTFILE =/media/data/Projects/Unreal Projects/RnD/RnD.uproject
 
 TARGETS = \
 	UE4Client-Linux-Debug  \

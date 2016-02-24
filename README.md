@@ -22,3 +22,17 @@ If you are not, also run:
 Start the project, go to the root folder (content) and click  
 **Add New -> Feature or Content Pack -> Content Packs -> Starter Content**  
 You will also need to add the UE4 Mannequin, or exchange it for the Blue standard guy that comes with UE4.
+
+## TABLE OF CONTENTS
+- Compass
+- Lock Picking à la Fallout
+- Minimap
+- Random Generated World (RGW folder)
+- Targeting System (Ponies folder)
+- Camera Switching (Ponies folder)
+- Character Switching (Ponies folder)
+- Dialog System
+- Game Saving (WIP)
+- Magazine Based Weapon System (WIP)  
+
+also included: a dev hub map displaying most of that and a default player (input seems broken atm, investigating)

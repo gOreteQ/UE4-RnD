@@ -7,8 +7,6 @@ ABaseWeapon::ABaseWeapon(){
     //PrimaryActorTick.bCanEverTick = true;
     WeaponMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("WeaponMesh"));
     RootComponent = WeaponMesh;
-    MuzzleLocation = WeaponMesh->GetSocketLocation("Muzzle");
-    MuzzleRotation = WeaponMesh->GetSocketRotation("Muzzle");
 }
 
 void ABaseWeapon::Init(){
@@ -31,7 +29,9 @@ void ABaseWeapon::Reload(){
 
 void ABaseWeapon::Fire(){
     if(!CurrentMagazine->isEmpty()){
-		FVector ShotDirection = (CalcSpread()+Zeroing()).Normalize();
+		FVector ShotDirection = CalcSpread()+Zeroing();
+		ShotDirection.Normalize();
+    	MuzzleTransform = WeaponMesh->GetSocketTransform("Muzzle");
         CurrentMagazine->SpawnBullet( MuzzleTransform, ShotDirection );
 		Recoil();
     } 

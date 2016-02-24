@@ -15,9 +15,9 @@ void ARnDPlayerChar::Tick(float DeltaSeconds){
     
 }
 
-void ARnDPlayerChar::SetupPlayerInputComponent(class UInputComponent* InputComponent){
-    
-}
+//void ARnDPlayerChar::SetupPlayerInputComponent(class UInputComponent* InputComponent){
+//    
+//}
 
 void ARnDPlayerChar::Interact_Implementation(AActor* Caller){
     

@@ -18,7 +18,7 @@ public:
 
     void setBulletCount(int32 amount);
     void decrementBulletCount();
-    void SpawnBullet(FVector location, FRotator rotation);
+    void SpawnBullet(FTransform SpawnTransform, FVector direction);
     
     virtual void Interact_Implementation(AActor* Caller) override;
 

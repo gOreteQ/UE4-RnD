@@ -22,8 +22,8 @@ public:
     void Fire();
     void Reload();
  	void Recoil();   
-	void CalcSpread();
-	void Zeroing();	
+	FVector CalcSpread();
+	FVector Zeroing();	
 
 private:
     TSubclassOf<class AMagazineBase> MagazineType;
@@ -31,6 +31,5 @@ private:
     ARnDPlayerChar* Owner;
     
     USkeletalMeshComponent* WeaponMesh;
-    FVector MuzzleLocation;
-    FRotator MuzzleRotation;
+    FTransform MuzzleTransform;
 };
